@@ -3,7 +3,9 @@ def valid_move?(board,index)
   position_taken?(board,index)
   if (index > 8 || index < 0)
     false
-  elsif board[index] = 
+  elsif board[index] == ("X" || "O")
+    false
+  else
     true
   end
 end
